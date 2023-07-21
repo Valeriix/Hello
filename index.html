@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+
+<head>
+    <!-- This is the title of the page that is shown on the tab -->
+    <title>Valerio presentation</title>
+
+    <!-- Slide 24 -->
+    <!-- This is inline CSS code - More comments on the styles.css file-->
+    <style>
+        p {
+            color: rgb(0, 42, 255);
+        }
+
+    </style>
+    <!-- Here we are importing an external CSS file  -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- This is a comment. It is not rendered in the webpage! -->
+
+    <!-- h1 means Heading 1. There are h1, h2, h3, h4, h5, and h6 elements for headings. -->
+    <h1>I'm Valerio</h1>
+    <!-- p is a paragraph element. Used for simple text. -->
+    <p>Nice to meet you!</p>
+
+    <p>This is my first paragraph.</p>
+
+    <!-- Although this is also a p element, it is green because in the CSS hierarchy, the inline style is more important. -->
+    <p style="color: #0faf00;">I like green!</p>
+
+    <!-- Although this is also a p element, it is green because in the CSS hierarchy, the inline style is more important. -->
+    <p>And blue obviously...</p>
+
+    <!-- Although this is also a p element, it is green because in the CSS hierarchy, the inline style is more important. -->
+    <p id="p-click">This is a clickable paragraph.</p> 
+    <!-- This is inline javascript inside a script element. Not very recommended to do, but it is possible. -->
+    <script>     
+        document.getElementById("p-click").addEventListener("click", paragraphAlert);
+        
+        function paragraphAlert() { 
+            alert("oh you find me!"); 
+        } 
+    </script> 
+
+    <p id="click-button">Click me!</p>
+
+    <!-- An imported script. Usually, they are located at the bottom of the page. -->
+    <script src="main.js"></script> 
+</body>
+
+</html>

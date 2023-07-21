@@ -1,0 +1,14 @@
+/*
+This is a comment in CSS
+*/
+/* This rule affects all elements with the class p-red */
+.p-green {
+    color: rgb(0, 255, 64);
+}
+
+/* This rule affects the element with id="click-button" and mimicks the style of a button */
+#click-button {
+    color: chocolate;
+    font-size: 30px;
+    cursor: pointer;
+}
